@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config",
+  "name": "@dkupinic/eslint-config",
   "version": "0.1.0",
   "description": "Dino Kupinic's ESLint config",
   "type": "module",
@@ -9,6 +9,9 @@
     "eslint",
     "eslintconfig"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Dino Kupinic",
   "license": "MIT",
   "peerDependencies": {
