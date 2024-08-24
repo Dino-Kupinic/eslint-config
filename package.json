@@ -1,10 +1,10 @@
 {
   "name": "@dkupinic/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dino Kupinic's ESLint config",
   "type": "module",
-  "main": "index.mjs",
-  "exports": "./index.mjs",
+  "main": "index.js",
+  "exports": "./index.js",
   "keywords": [
     "eslint",
     "eslintconfig"
