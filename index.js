@@ -1,26 +1,11 @@
 import eslintConfigPrettier from 'eslint-config-prettier';
 
-export default [
+export const config = [
   {
     files: ["**/*.ts", "**/*.tsx"],
     rules: {
-      curly: ["warn", "multi-line"],
-      eqeqeq: "error",
-      yoda: "warn",
-      "prefer-promise-reject-errors": ["error", { allowEmptyReject: true }],
-      "array-callback-return": ["error", { allowImplicit: true }],
-      "no-else-return": "warn",
-      "no-console": "error",
-      "no-constant-binary-expression": "error",
-      "no-useless-return": "warn",
-      "default-case-last": "error",
-      "no-promise-executor-return": "error",
-      "no-template-curly-in-string": "error",
-      "no-unreachable-loop": "error",
-      "no-duplicate-imports": "warn",
-      "no-multiple-empty-lines": "warn",
-      "no-label-var": "error",
-      "no-undef-init": "warn",
+      // Error prevention
+      "no-undef": "error",
       "no-unused-vars": [
         "error",
         {
@@ -31,7 +16,30 @@ export default [
           varsIgnorePattern: "^_",
         },
       ],
+      "no-constant-binary-expression": "error",
+      "no-unreachable-loop": "error",
+      "no-promise-executor-return": "error",
+      "no-template-curly-in-string": "error",
+      
+      // Code quality
+      eqeqeq: "error",
+      "prefer-promise-reject-errors": ["error", { allowEmptyReject: true }],
+      "array-callback-return": ["error", { allowImplicit: true }],
+      "default-case-last": "error",
+      "no-label-var": "error",
+      
+      // Best practices
+      curly: ["warn", "multi-line"],
+      yoda: "warn",
+      "no-else-return": "warn",
+      "no-console": "error",
+      "no-useless-return": "warn",
+      "no-duplicate-imports": "warn",
+      "no-multiple-empty-lines": "warn",
+      "no-undef-init": "warn",
     },
   },
   eslintConfigPrettier,
 ];
+
+export default config;
