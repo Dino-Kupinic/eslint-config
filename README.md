@@ -2,6 +2,9 @@
 
 A custom ESLint configuration for maintaining consistent code style and catching potential errors.
 
+> [!CAUTION]
+> This package is still under active development, "API" changes occur frequently. Also note that "eslint-config-prettier" is already included!
+
 ## Installation
 
 ```bash
